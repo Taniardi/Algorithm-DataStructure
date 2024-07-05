@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 int table[100] = {0};
-
 int getFiboMemoi(int num){
 	if(num <= 1) return num;	
 	
@@ -11,6 +10,7 @@ int getFiboMemoi(int num){
 	
 	return table[num] = getFiboMemoi(num - 1) + getFiboMemoi(num - 2);
 }
+
 int temp = 2;
 int getFiboTabu(int num){
 	if(table[num] != 0) return table[num];
