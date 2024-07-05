@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int table[100][100];
+int table[100][100] = {0};
 int ccTabu(int *coin, int size, int target){
 	for(int i=0; i<=target; i++){
 		table[0][i] = 0;
